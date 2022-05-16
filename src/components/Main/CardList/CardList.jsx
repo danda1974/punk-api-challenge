@@ -1,14 +1,15 @@
 import beers from "../../../data/beers";
 import Card from "./Card/Card"
+import "./CardList.scss";
 
-const CardList = ({cards}) => {
-  const cardsArr = cards.map((card, index) => {
+const CardList = () => {
+  const cardsArr = beers.map((beer, index) => {
     return (
-      <Card image={beers.image_url} name={beers.name} description={beers.description} key={"card" + index} />
+      <Card image_url={beer.image_url} name={beer.name} description={beer.description} key={"card" + index} />
     )
   })
   return (
-    <div>
+    <div className="beercardsGrid">
       {cardsArr}
     </div>
   );
