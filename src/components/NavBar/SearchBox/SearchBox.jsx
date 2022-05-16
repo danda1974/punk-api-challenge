@@ -1,8 +1,8 @@
-
+import "./SearchBox.scss";
 
 const SearchBox = () => {
   return (
-    <div>
+    <div className="searchBox">
       <input type="text" placeholder="Search..." />
     </div>
   );
