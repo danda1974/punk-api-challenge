@@ -7,8 +7,6 @@ import Main from "./components/Main/Main";
 import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
-  // console.log("Cheers");
-
   // const getBeers = async () => {
   //   const url = "https://api.punkapi.com/v2/beers";
   //   const response = await.fetch(url);
@@ -17,9 +15,8 @@ const App = () => {
   // }
   return (
     <div className="mainGrid">
-      {/* <p>Wo bleibt mein Bier?</p> */}
       <NavBar />
-      <Main />
+      <Main beers={beers}/>
     </div>
   );
 };
