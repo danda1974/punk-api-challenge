@@ -1,9 +1,10 @@
 import SearchBox from "./SearchBox/SearchBox";
 
-const NavBar = () => {
+const NavBar = ({handleInput}) => {
   return (
     <div>
-      <SearchBox />
+      <SearchBox handleInput={handleInput}/>
+      {/* <FiltersList /> */}
     </div>
   );
 };

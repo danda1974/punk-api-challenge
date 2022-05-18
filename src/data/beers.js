@@ -1,4 +1,4 @@
-const beers = [
+const allBeers = [
   {
     id: 1,
     name: "Buzz",
@@ -726,4 +726,4 @@ const beers = [
   },
 ];
 
-export default beers;
+export default allBeers;
