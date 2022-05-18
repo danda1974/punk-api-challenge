@@ -1,9 +1,15 @@
 import "./FilterItem.scss";
 
-const FilterItem = () => {
+const FilterItem = ({filterName, filterID, handleCheckboxes}) => {
+  const toggleCheckbox = (event) => {
+    handleCheckboxes({
+      checked: event.target.checked,
+      id: event.target.id
+    })
+  }
   return (
-    <div>
-
+    <div className="filterItem">
+      <span>{filterName}</span> <input type="checkbox" id={filterID} onClick={toggleCheckbox}></input> 
     </div>
   );
 };

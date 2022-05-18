@@ -18,6 +18,10 @@ const App = () => {
     })
     setBeers(beersArr)
   }
+  const handleCheckboxes = (isChecked) => {
+
+    console.log(isChecked)
+  }
   // const getBeers = async () => {
   //   const url = "https://api.punkapi.com/v2/beers";
   //   const response = await.fetch(url);
@@ -26,7 +30,7 @@ const App = () => {
   // }
   return (
     <div className="mainGrid">
-      <NavBar handleInput={handleInput}/>
+      <NavBar handleInput={handleInput} handleCheckboxes={handleCheckboxes}/>
       <Main beers={beers}/>
     </div>
   );
