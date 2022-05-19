@@ -1,6 +1,6 @@
 .searchBox {
   margin: 30px 0 30px 20px;
-
+  width: 1fr;
   
   input {
     border: 2px solid rgb(0, 217, 255);
@@ -9,6 +9,7 @@
     &::placeholder {
       color: rgb(0, 217, 255);
       padding: 6px;
+      font-size: 16px;
     }
   }
 }

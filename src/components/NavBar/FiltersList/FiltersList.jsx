@@ -5,15 +5,15 @@ const FiltersList = ({handleCheckboxes}) => {
   const filters = [
     {
       id: "abv", 
-      name: "High ABV (>6.0%)"
+      name: "High Alcohol (ABV >6.0%)"
     },
     {
       id: "classic", 
-      name: "Classic Range"
+      name: "Classic Range (before 2010)"
     },
     {
       id: "acidic", 
-      name: "Acidic (ph < 4)"
+      name: "High Acidity (ph <4)"
     },
   ]
   const filterItemArr = filters.map((filter, index) => {
